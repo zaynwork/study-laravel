@@ -5,21 +5,21 @@
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" placeholder="Full name" aria-placeholder="Full name per IC" required autofocus />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         <!--Nickname-->
         <div class="mt-4">
             <x-input-label for="nickname" :value="__('Nickname')" />
-            <x-text-input id="nickname" class="block mt-1 w-full" type="text" name="nickname" :value="old('nickname')" required autofocus autocomplete="nickname" />
+            <x-text-input id="nickname" class="block mt-1 w-full" type="text" name="nickname" :value="old('nickname')" placeholder="What people call you?" aria-placeholder="What people call you?" required autofocus />
             <x-input-error :messages="$errors->get('nickname')" class="mt-2" />
         </div>
 
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" placeholder="Valid email address" aria-placeholder="Valid email address" required />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
@@ -30,7 +30,9 @@
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
                             name="password"
-                            required autocomplete="new-password" />
+                            required autocomplete="new-password"
+                            placeholder="8 - 32 characters"
+                            aria-placeholder="8 - 32 characters" />
 
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
@@ -41,7 +43,9 @@
 
             <x-text-input id="password_confirmation" class="block mt-1 w-full"
                             type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
+                            name="password_confirmation" required autocomplete="new-password"
+                            placeholder="8 - 32 characters"
+                            aria-placeholder="8 - 32 characters" />
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
