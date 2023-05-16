@@ -5,14 +5,14 @@
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" placeholder="Full name" aria-placeholder="Full name per IC" required autofocus />
+            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" placeholder="Full name per IC" aria-placeholder="Full name per IC" required autofocus />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         <!--Nickname-->
         <div class="mt-4">
             <x-input-label for="nickname" :value="__('Nickname')" />
-            <x-text-input id="nickname" class="block mt-1 w-full" type="text" name="nickname" :value="old('nickname')" placeholder="What people call you?" aria-placeholder="What people call you?" required autofocus />
+            <x-text-input id="nickname" class="block mt-1 w-full" type="text" name="nickname" :value="old('nickname')" placeholder="What do people call you?" aria-placeholder="What do people call you?" required autofocus />
             <x-input-error :messages="$errors->get('nickname')" class="mt-2" />
         </div>
 
@@ -44,8 +44,8 @@
             <x-text-input id="password_confirmation" class="block mt-1 w-full"
                             type="password"
                             name="password_confirmation" required autocomplete="new-password"
-                            placeholder="8 - 32 characters"
-                            aria-placeholder="8 - 32 characters" />
+                            placeholder="Re-enter password"
+                            aria-placeholder="Re-enter password" />
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
