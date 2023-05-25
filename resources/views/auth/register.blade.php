@@ -12,7 +12,7 @@
         <!--Nickname-->
         <div class="mt-4">
             <x-input-label for="nickname" :value="__('Nickname')" />
-            <x-text-input id="nickname" class="block mt-1 w-full" type="text" name="nickname" :value="old('nickname')" placeholder="What do people call you?" aria-placeholder="What do people call you?" required autofocus />
+            <x-text-input id="nickname" class="block mt-1 w-full" type="text" name="nickname" :value="old('nickname')" placeholder="What can we call you?" aria-placeholder="What can we call you?" required autofocus />
             <x-input-error :messages="$errors->get('nickname')" class="mt-2" />
         </div>
 
