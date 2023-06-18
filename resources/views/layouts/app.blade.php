@@ -8,8 +8,8 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Favicons -->
-        <link href="favicon-red.ico" rel="icon">
-        <link href="favicon-red.ico" rel="apple-touch-icon">
+        <link href="favicon-gray.ico" rel="icon">
+        <link href="favicon-gray.ico" rel="apple-touch-icon">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
